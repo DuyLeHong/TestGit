@@ -22,6 +22,10 @@ const carModel = require('./carModel');
 app.get('/', async (req, res) => {
     await mongoose.connect(uri);
 
+    console.log("đây là file test");
+    console.log("đây là file test2");
+    console.log("đây là file test3");
+    
     let cars = await carModel.find();
 
     console.log(cars);
