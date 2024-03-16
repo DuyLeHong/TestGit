@@ -25,11 +25,8 @@ app.get('/', async (req, res) => {
     let a = 3;
     let b = 4;
     let tong = a +b;
-    console.log(tong);
 
     console.log("đây là file test");
-    console.log("đây là file test2");
-    console.log("đây là file test3");
     
     let cars = await carModel.find();
 
